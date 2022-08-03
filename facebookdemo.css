@@ -22,7 +22,7 @@ body {
 .container .left img {
     width:300px;
     margin-top: -100px;
-    margin-left: -37px;
+    margin-left: -30px;
 }
 
 .container .left p {
@@ -38,7 +38,7 @@ body {
 .container .right form {
     text-align: center;
     background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 35px 0px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     padding: 0px 15px;
     border-radius: 5px;
 }
@@ -51,11 +51,12 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     outline: none;
+    background-color: rgb(241, 241, 241);
 }
 
 .container .right form input:focus {
     border: 1px solid rgb(36, 131, 219);
-    box-shadow: rgba(36, 131, 219, 0.2) 0px 0px 5px 0px;
+    box-shadow:  0px 0px 5px 0px rgba(36, 131, 219, 0.2);
 }
 
 .container .right form #login {
@@ -127,14 +128,16 @@ body {
     }
 
     .container .left img {
+        display: block;
         width:270px;
+        margin: auto;
         margin-top: -100px;
-        margin-left: -30px;
     }
     
     .container .left p {
         font-size: 20px;
         margin-top: -15px;
+        text-align: center;
     }
 
     .container .right {
@@ -148,4 +151,10 @@ body {
         margin-top: 20px;
         margin-right: 0px;
     }
+}
+
+@media screen and (max-width:500px) {
+    .container .right small {
+        font-size: 12px;
+    }    
 }
